@@ -1,3 +1,4 @@
+const navDialog=document.getElementById('nav-dialog');
 function handleMenu(){
-    alert('asfd')
+  navDialog.classList.toggle('hidden');
 }
