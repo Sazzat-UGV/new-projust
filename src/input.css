@@ -11,4 +11,7 @@
     h1,h2,h3{
         @apply font-display text-gray-800 font-medium;
     }
+    .container{
+        @apply px-6 py-2 max-w-7xl mt-4 mx-auto lg:px-8 lg:mt-32;
+    }
 }
