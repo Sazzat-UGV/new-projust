@@ -11,11 +11,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./src/output.css" />
+    <link rel="shortcut icon" href="./assets/asset 0.png" type="image/x-icon">
     <title>ToDesktop</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="p-3 flex bg-white justify-between items-center">
+    <nav class="p-3 flex bg-white justify-between items-center z-50 fixed left-0 right-0 top-0 shadow-md">
       <a href="#" class="flex gap-2 items-center flex-1">
         <img
           class="object-cover max-w-12 max-h-12"
@@ -95,7 +96,7 @@
       </div>
     </nav>
     <!-- Main -->
-    <main>
+    <main class="mt-16">
       <!-- Hero Section -->
       <div
         id="hero"
@@ -746,7 +747,7 @@
         <h2 class="mt-14 text-5xl sm:font-semibold">How it works</h2>
         <div
           id="step1"
-          class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row mt-8 gap-4"
+          class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row mt-8 gap-4 justify-between"
         >
           <div class="flex flex-col gap-6 lg:w-1/2">
             <span
@@ -807,7 +808,7 @@
         </div>
         <div
           id="step2"
-          class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row mt-8 gap-4"
+          class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row mt-8 gap-4 justify-between"
         >
           <div class="flex flex-col gap-6 lg:w-1/2">
             <span
@@ -868,7 +869,7 @@
         </div>
         <div
           id="step3"
-          class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row mt-8 gap-4"
+          class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row mt-8 gap-4 justify-between"
         >
           <div class="flex flex-col gap-6 lg:w-1/2">
             <span
@@ -1327,7 +1328,7 @@ Create your desktop app for free*
                 <span class="text-lg font-light text-gray-800">Free for personal use</span>
               </li>
             </ul>
-            <button class="px-8 py-3 text-white bg-primary rounded-lg hover:border-gray-800 hober:bg-opacity-90 font-display font-medium">Read Docs</button>
+            <button class="px-8 py-3 text-white bg-primary rounded-lg hover:border-gray-800 hover:bg-opacity-90 font-display font-medium">Read Docs</button>
           </div>
         </div>
        </div>
@@ -1384,8 +1385,32 @@ Create your desktop app for free*
 
             </div>
         </div>
-      <div class="h-[1000px]"></div>
-    </main>
+
+        </main>
+      <Footer class="container">
+        <div class="rounded-lg border lg:border-none lg:bg-gray-50 bg-gray-50 flex flex-col lg:flex-row-reverse items-center px-8 py-6 gap-8">
+          <a href="" class="font-light font-display text-lg">Documentation</a>
+          <div class="flex gap-8">
+            <a href="" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-github"></i></a>
+          </div>
+           <a href="#" class="flex gap-2 items-center flex-1">
+        <img
+          class="object-cover max-w-12 max-h-12"
+          alt="logo"
+          src="./assets/asset 0.png"
+        />
+        <span class="text-lg font-medium font-display">ToDesktop</span>
+      </a>
+        </div>
+        <div class="flex flex-col gap-6 items-center justify-center my-12" id="subfooter">
+<div class="flex gap-2 items-center">
+  <img src="./assets/asset 54.svg" alt="" class="w-4 h-4">
+  <p class="text-sm text-gray-600">A Y Combinator company.</p>
+</div>
+<p class="text-sm text-gray-400">© 2024 ToDesktop, Inc. All rights reserved</p>
+        </div>
+      </Footer>
   </body>
   <script src="./src/script.js"></script>
 </html>
