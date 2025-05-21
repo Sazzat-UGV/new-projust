@@ -45,3 +45,29 @@ setupIntersectionObserver(line1, true, 0.15);
 setupIntersectionObserver(line2, false, 0.15);
 setupIntersectionObserver(line3, true, 0.15);
 setupIntersectionObserver(line4, true, 0.15);
+
+
+
+
+
+// faq
+const dtElements = document.querySelectorAll("dt");
+
+dtElements.forEach((element) => {
+  const toggleFAQ = () => {
+    const ddId = element.getAttribute("aria-controls");
+    const ddElement = document.getElementById(ddId);
+    const arrowIcon = element.querySelector("i");
+
+    ddElement.classList.toggle("hidden");
+    arrowIcon?.classList.toggle("-rotate-180");
+  };
+
+  element.addEventListener("click", toggleFAQ);
+  element.addEventListener("keypress", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleFAQ();
+    }
+  });
+});
